@@ -15,12 +15,28 @@ nextButton.addEventListener("click", function(){
         // tolgo classe active
         element[activeElement].classList.remove("active");
 
-        // incremento indice dell'elemento che voglio vedere
+        // incremento indice dell'elemento per andare all'elemento successivo
         activeElement++;
 
         // aggiungo classe active al prossimo elemento
         element[activeElement].classList.add("active");
     }
+});
 
+// seleziono back-button
+const backButton = document.querySelector(".back-button");
 
+// azioni al click del bottone back
+backButton.addEventListener("click", function(){
+
+    if(activeElement > 0){
+        // tolgo classe active all'elemento precedente
+        element[activeElement].classList.remove("active");
+
+        // decremento incide dell'elemento per andare all'elemento precedente 
+        activeElement--;
+
+        // aggiungo classe active all'elemento
+        element[activeElement].classList.add("active");
+    }
 });
