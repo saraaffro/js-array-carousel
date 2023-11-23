@@ -13,18 +13,23 @@
 
 .carousel{
     width: 50%;
+    height: 50%;
 }
 
 .element-container{
     position: relative;
+    height: 100%;
 }
 
 .element{
     display: none;
+    height: 100%;
+    text-align: center;
 }
 
 .element img{
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 
 .active{
