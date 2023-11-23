@@ -13,20 +13,18 @@
 
 .carousel{
     width: 50%;
-    /* debug */
-    background-color: aqua;
-    height: 40vh;
 }
 
 .element-container{
     position: relative;
-    height: 100%;
 }
 
 .element{
     display: none;
+}
+
+.element img{
     width: 100%;
-    background-color: blue;
 }
 
 .active{
