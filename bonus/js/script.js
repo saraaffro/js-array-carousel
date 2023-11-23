@@ -21,18 +21,20 @@ nextButton.addEventListener("click", function(){
         // aggiungo classe active al prossimo elemento
         element[activeElement].classList.add("active");
     }
+        
+    // ciclo infinito
+    if(activeElement === element.length -1){
+    
+    // tolgo classe active
+    element[activeElement].classList.remove("active");
 
-     // ciclo infinito
-     if(activeElement === element.length -1){
-        // tolgo classe active
-       element[activeElement].classList.remove("active");
+    // torno a indice 0
+    activeElement = 0;
 
-       // torno a indice 0
-       activeElement = 0;
-
-       // aggiungo classe active al prossimo elemento
-       element[activeElement].classList.add("active");
+    // aggiungo classe active al prossimo elemento
+    element[activeElement].classList.add("active");
    }
+   
 });
 
 // seleziono back-button
@@ -51,15 +53,16 @@ backButton.addEventListener("click", function(){
         // aggiungo classe active all'elemento
         element[activeElement].classList.add("active");
     }
-       // ciclo infinito
-       if(activeElement === 0){
-        // tolgo classe active
-       element[activeElement].classList.remove("active");
+    
+    // ciclo infinito
+    if(activeElement === 0){
+    // tolgo classe active
+    element[activeElement].classList.remove("active");
 
-       // torno a indice 0
-       activeElement = 4;
+    // torno a indice 0
+    activeElement = 4;
 
-       // aggiungo classe active al prossimo elemento
-       element[activeElement].classList.add("active");
-   }
+    // aggiungo classe active al prossimo elemento
+    element[activeElement].classList.add("active");
+    }
 });
