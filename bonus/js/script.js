@@ -56,8 +56,8 @@ backButton.addEventListener("click", function(){
         // tolgo classe active
         element[activeElement].classList.remove("active");
 
-        // torno a indice 0
-        activeElement = element.length - 1;
+        // torno a ultimo indice 
+        activeElement === element.length - 1;
 
         // aggiungo classe active al prossimo elemento
         element[activeElement].classList.add("active");
